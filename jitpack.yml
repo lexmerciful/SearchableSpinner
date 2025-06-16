@@ -1,5 +1,3 @@
 install:
-  - chmod +x gradlew
-
-build:
-  - ./gradlew :searchablespinner:publishToMavenLocal
+  - ./gradlew -q :searchablespinner:assembleRelease \
+    :searchablespinner:publishReleasePublicationToMavenLocal
